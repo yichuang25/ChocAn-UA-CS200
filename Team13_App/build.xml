@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="cs200fall2019team13">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../../Applications/Eclipse.app/Contents/MacOS/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="12"/>
+    <property name="source" value="12"/>
+    <path id="JUnit 5.libraryclasspath">
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.api_5.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.engine_5.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.params_5.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.commons_1.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.engine_1.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.launcher_1.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.runner_1.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.suite.api_1.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.vintage.engine_5.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.opentest4j_1.2.0.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.apiguardian_1.1.0.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <path id="cs200fall2019team13.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.memberControlTest.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.ProviderFrame.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.ProviderTest.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.BillMember.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.MemberTest.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.OperatorFrame.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.LaunchFrame.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.addMember.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.ManagerFrame.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.Operator.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.LoginTest.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.main.classpath">
+        <path refid="cs200fall2019team13.classpath"/>
+        <pathelement location="sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="jgoodies-forms-1.8.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="cs200fall2019team13.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="memberControlTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="Control.test.memberControlTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.memberControlTest.classpath"/>
+        </junit>
+    </target>
+    <target name="ProviderFrame">
+        <java classname="UI.ProviderFrame" failonerror="true" fork="yes">
+            <classpath refid="run.ProviderFrame.classpath"/>
+        </java>
+    </target>
+    <target name="ProviderTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="Entity.test.ProviderTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.ProviderTest.classpath"/>
+        </junit>
+    </target>
+    <target name="BillMember">
+        <java classname="UI.BillMember" failonerror="true" fork="yes">
+            <classpath refid="run.BillMember.classpath"/>
+        </java>
+    </target>
+    <target name="MemberTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="Entity.test.MemberTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.MemberTest.classpath"/>
+        </junit>
+    </target>
+    <target name="OperatorFrame">
+        <java classname="UI.OperatorFrame" failonerror="true" fork="yes">
+            <classpath refid="run.OperatorFrame.classpath"/>
+        </java>
+    </target>
+    <target name="LaunchFrame">
+        <java classname="UI.LaunchFrame" failonerror="true" fork="yes">
+            <classpath refid="run.LaunchFrame.classpath"/>
+        </java>
+    </target>
+    <target name="addMember">
+        <java classname="UI.addMember" failonerror="true" fork="yes">
+            <classpath refid="run.addMember.classpath"/>
+        </java>
+    </target>
+    <target name="ManagerFrame">
+        <java classname="UI.ManagerFrame" failonerror="true" fork="yes">
+            <classpath refid="run.ManagerFrame.classpath"/>
+        </java>
+    </target>
+    <target name="Operator">
+        <java classname="UI.Operator" failonerror="true" fork="yes">
+            <classpath refid="run.Operator.classpath"/>
+        </java>
+    </target>
+    <target name="LoginTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="Entity.test.LoginTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.LoginTest.classpath"/>
+        </junit>
+    </target>
+    <target name="main">
+        <java classname="cs200fall2019team13.Main" failonerror="true" fork="yes">
+            <classpath refid="run.main.classpath"/>
+        </java>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>

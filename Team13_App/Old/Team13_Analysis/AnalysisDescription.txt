@@ -1,0 +1,7 @@
+• What sections will be computerized and how;
+• Where the data will be stored;
+• What hardware will be needed;
+• How the ChocAn system you develop will interact with other systems;
+• How users will interact with the system.
+
+The ChocAn system is relatively light weight. The system makes all the member data management and billing for chocAn computerized.  The hardware required is a few terminals for all the inputs and outputs, a server where all the data processing will be done, and a card reader to scan the member cards. The data will be stored on hard drive disks within the server. The system will interact with other systems such as the ChocAn Data Center to run accounting, and banking systems for payment processing. Providers and managers will use the terminals for data management such as adding/deleting members and managing the services provided to the members. Members can also interact with the system by swiping in with their member card using the card reader allowing the system to lookup their account.

@@ -1,0 +1,28 @@
+Provider Name: 	Work Hard
+Provider Number: 	200000003
+
+Provider Street Address: 	996 provider drive
+Provider City: 	ChocAn City
+Provider State: 	AL
+Provider Zip Code: 	10000
+===============================================
+Service Provided: 
+
+Date of Service: 	11/11/2019
+Record Date Time: 	2019-11-12 22:08:35
+Member Name: 	Jane Dow
+Member Number: 	100000002
+Service Code: 	100001
+Service Fee: 	19.99
+
+Date of Service: 	11/10/2019
+Record Date Time: 	2019-11-12 22:08:35
+Member Name: 	Im Rich
+Member Number: 	100000004
+Service Code: 	100002
+Service Fee: 	99.99
+
+===============================================
+
+Total Count of Consultation: 	2
+Total Service Fee Earned: 	119.97999999999999

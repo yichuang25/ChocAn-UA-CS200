@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="3" failures="0" hostname="Yichens-MacBook-Pro.local" name="Entity.test.MemberTest" skipped="0" tests="3" time="0.086" timestamp="2019-12-06T19:58:46">
+  <properties>
+    <property name="ant.library.dir" value="/Users/apple/.p2/pool/plugins/org.apache.ant_1.10.5.v20190526-1402/lib" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="java.specification.version" value="12" />
+    <property name="ant.project.name" value="cs200fall2019team13" />
+    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_17255" value="1" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.class.path" value="/Users/apple/git/fall2019team13/Team13_App/bin:/Users/apple/git/fall2019team13/Team13_App/sqlite-jdbc-3.27.2.1.jar:/Users/apple/git/fall2019team13/Team13_App/jgoodies-forms-1.8.0.jar:/Users/apple/.p2/pool/plugins/org.junit.jupiter.api_5.5.1.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.junit.jupiter.engine_5.5.1.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.5.1.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.junit.jupiter.params_5.5.1.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.junit.platform.commons_1.5.1.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.junit.platform.engine_1.5.1.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.junit.platform.launcher_1.5.1.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.junit.platform.runner_1.5.1.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.junit.platform.suite.api_1.5.1.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.junit.vintage.engine_5.5.1.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.opentest4j_1.2.0.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.apiguardian_1.1.0.v20190826-0900.jar:/Users/apple/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar:/Users/apple/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar:/Users/apple/.p2/pool/plugins/org.apache.ant_1.10.5.v20190526-1402/lib/ant-launcher.jar:/Users/apple/.p2/pool/plugins/org.apache.ant_1.10.5.v20190526-1402/lib/ant.jar:/Users/apple/.p2/pool/plugins/org.apache.ant_1.10.5.v20190526-1402/lib/ant-junit.jar:/Users/apple/.p2/pool/plugins/org.apache.ant_1.10.5.v20190526-1402/lib/ant-junit4.jar" />
+    <property name="env.HOME" value="/Users/apple" />
+    <property name="source" value="12" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="java.vendor.url" value="https://java.oracle.com/" />
+    <property name="ant.file.cs200fall2019team13" value="/Users/apple/git/fall2019team13/Team13_App/build.xml" />
+    <property name="java.vm.specification.version" value="12" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="env.JAVA_MAIN_CLASS_17389" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner" />
+    <property name="user.country" value="US" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner Entity.test.MemberTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/apple/git/fall2019team13/Team13_App/junit/TEST-Entity.test.MemberTest.xml crashfile=/Users/apple/git/fall2019team13/Team13_App/junitvmwatcher6481644693134300624.properties propsfile=/Users/apple/git/fall2019team13/Team13_App/junit2821486366917073899.properties" />
+    <property name="jdk.debug" value="release" />
+    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_17389" value="1" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="user.home" value="/Users/apple" />
+    <property name="user.language" value="en" />
+    <property name="eclipse.pdebuild.templates" value="/Applications/Eclipse.app/Contents/MacOS/../../../../Users/apple/.p2/pool/plugins/org.eclipse.pde.build_3.10.500.v20190620-0530/templates" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.version.date" value="2019-04-16" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home" />
+    <property name="file.separator" value="/" />
+    <property name="basedir" value="/Users/apple/git/fall2019team13/Team13_App" />
+    <property name="eclipse.pdebuild.home" value="/Applications/Eclipse.app/Contents/MacOS/../../../../Users/apple/.p2/pool/plugins/org.eclipse.pde.build_3.10.500.v20190620-0530/." />
+    <property name="java.vm.compressedOopsMode" value="Zero based" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="ant.java.version" value="12" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="env.Apple_PubSub_Socket_Render" value="/private/tmp/com.apple.launchd.cSGDIU4tUV/Render" />
+    <property name="env.ANT_HOME" value="/Users/apple/.p2/pool/plugins/org.apache.ant_1.10.5.v20190526-1402" />
+    <property name="env.XPC_SERVICE_NAME" value="org.eclipse.platform.ide.58420" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="java.runtime.version" value="12.0.1+12" />
+    <property name="user.name" value="apple" />
+    <property name="ant.file" value="/Users/apple/git/fall2019team13/Team13_App/build.xml" />
+    <property name="env.PATH" value="/usr/bin:/bin:/usr/sbin:/sbin" />
+    <property name="path.separator" value=":" />
+    <property name="os.version" value="10.14.6" />
+    <property name="env.XPC_FLAGS" value="0x0" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="env.LOGNAME" value="apple" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0x0:0x0" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS" value="/Users/apple/Library/WebKit/Databases" />
+    <property name="ant.project.invoked-targets" value="MemberTest" />
+    <property name="ant.file.type.cs200fall2019team13" value="file" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="ECLIPSE_HOME" value="../../../../../Applications/Eclipse.app/Contents/MacOS/" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="ant.core.lib" value="/Users/apple/.p2/pool/plugins/org.apache.ant_1.10.5.v20190526-1402/lib/ant.jar" />
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
+    <property name="java.io.tmpdir" value="/var/folders/xg/zlmz9zwn4gd37p135f_jrznh0000gn/T/" />
+    <property name="java.version" value="12.0.1" />
+    <property name="user.dir" value="/Users/apple/git/fall2019team13/Team13_App" />
+    <property name="os.arch" value="x86_64" />
+    <property name="env.SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.cMtOizR0CK/Listeners" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.home" value="/Users/apple/.p2/pool/plugins/org.apache.ant_1.10.5.v20190526-1402" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="target" value="12" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.5 compiled on July 10 2018" />
+    <property name="eclipse.pdebuild.scripts" value="/Applications/Eclipse.app/Contents/MacOS/../../../../Users/apple/.p2/pool/plugins/org.eclipse.pde.build_3.10.500.v20190620-0530/scripts" />
+    <property name="java.library.path" value="/Users/apple/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="env.TMPDIR" value="/var/folders/xg/zlmz9zwn4gd37p135f_jrznh0000gn/T/" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="java.vm.version" value="12.0.1+12" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="env.APP_ICON_17255" value="../Resources/Eclipse.icns" />
+    <property name="java.class.version" value="56.0" />
+    <property name="env.USER" value="apple" />
+    <property name="ant.project.default-target" value="build" />
+  </properties>
+  <testcase classname="Entity.test.MemberTest" name="initializationError" time="0.0">
+    <error message="The class Entity.test.MemberTest is not public." type="java.lang.Exception">java.lang.Exception: The class Entity.test.MemberTest is not public.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+</error>
+    <error message="Test class should have exactly one public constructor" type="java.lang.Exception">java.lang.Exception: Test class should have exactly one public constructor
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+</error>
+    <error message="No runnable methods" type="java.lang.Exception">java.lang.Exception: No runnable methods
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+</error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,5 @@
+After analyzing the system along with making thoughtful revision on previous graphs, we had, in a degree, reached a conscience that the design of the system should be as descriptive as it can; that of which means maximal interaction within a module and minimal interaction between modules.
+
+For the cohesion of the software, most of the modules in our design is match functional cohesion. For example; in our class diagram, a control class called accounting procedure is mainly about account the billing and login validation class is mainly focus on validating. Functional cohesion can let us maintain more easier and easier to extend a product.
+
+For the coupling of our software, our design is more approaching to stamp coupling that some data will be passed as a parameter of other module. For instance; in two control class, member management and provider management, we will pass the whole data structure in some method. Although more data than necessary will be passed but the interaction between the modules is less.

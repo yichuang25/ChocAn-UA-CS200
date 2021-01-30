@@ -1,0 +1,42 @@
+Provider Name: 	Very Capable
+Provider Number: 	200000001
+
+Provider Street Address: 	Next door
+Provider City: 	yourtown
+Provider State: 	AL
+Provider Zip Code: 	12345
+===============================================
+Service Provided: 
+
+Date of Service: 	12-05-2019 11:24:34
+Record Date Time: 	12-05-2019
+Member Name: 	Jane Dow
+Member Number: 	100000002
+Service Code: 	100003
+Service Fee: 	999.99
+
+Date of Service: 	12-05-2019
+Record Date Time: 	12-05-2019 10:49:31
+Member Name: 	Jane Dow
+Member Number: 	100000002
+Service Code: 	100004
+Service Fee: 	0.99
+
+Date of Service: 	11/10/2019
+Record Date Time: 	2019-11-12 22:08:35
+Member Name: 	Im Rich
+Member Number: 	100000004
+Service Code: 	100002
+Service Fee: 	99.99
+
+Date of Service: 	11/10/2019
+Record Date Time: 	2019-11-12 22:08:35
+Member Name: 	Im Rich
+Member Number: 	100000004
+Service Code: 	100002
+Service Fee: 	99.99
+
+===============================================
+
+Total Count of Consultation: 	4
+Total Service Fee Earned: 	1200.96

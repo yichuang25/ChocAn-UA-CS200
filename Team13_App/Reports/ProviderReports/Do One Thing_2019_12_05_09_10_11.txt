@@ -1,0 +1,42 @@
+Provider Name: 	Do One Thing
+Provider Number: 	200000002
+
+Provider Street Address: 	1000 provider drive
+Provider City: 	ChocAn City
+Provider State: 	AL
+Provider Zip Code: 	10000
+===============================================
+Service Provided: 
+
+Date of Service: 	12-05-2019
+Record Date Time: 	12-05-2019 07:33:52
+Member Name: 	Jane Dow
+Member Number: 	100000002
+Service Code: 	100003
+Service Fee: 	999.99
+
+Date of Service: 	12-05-2019
+Record Date Time: 	12-05-2019 09:08:30
+Member Name: 	Jane Dow
+Member Number: 	100000002
+Service Code: 	100001
+Service Fee: 	19.99
+
+Date of Service: 	11/1/2019
+Record Date Time: 	2019-11-12 22:08:35
+Member Name: 	John Dow
+Member Number: 	100000001
+Service Code: 	100003
+Service Fee: 	999.99
+
+Date of Service: 	11/10/2019
+Record Date Time: 	2019-11-12 22:08:35
+Member Name: 	Jane Dow
+Member Number: 	100000002
+Service Code: 	100003
+Service Fee: 	999.99
+
+===============================================
+
+Total Count of Consultation: 	4
+Total Service Fee Earned: 	3019.96

@@ -1,0 +1,28 @@
+Provider Name: 	Provide 4
+Provider Number: 	200000004
+
+Provider Street Address: 	4 provider drive
+Provider City: 	ChocAn City
+Provider State: 	AL
+Provider Zip Code: 	10000
+===============================================
+Service Provided: 
+
+Date of Service: 	11/2/2019
+Record Date Time: 	2019-11-12 22:08:35
+Member Name: 	Mr. Nobody
+Member Number: 	100000003
+Service Code: 	100004
+Service Fee: 	0.99
+
+Date of Service: 	11/10/2019
+Record Date Time: 	2019-11-12 22:08:35
+Member Name: 	Im Rich
+Member Number: 	100000004
+Service Code: 	100004
+Service Fee: 	0.99
+
+===============================================
+
+Total Count of Consultation: 	2
+Total Service Fee Earned: 	1.98

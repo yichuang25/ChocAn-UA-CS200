@@ -1,0 +1,34 @@
+test Glossary Terms:
+
+1.Member: Member of ChocAn, every member has a member card
+
+2.Provider: Health Care Professional who provides services to ChocAn member
+
+3.Terminal: desined for provider, like a credit card device in a shop
+
+4.Fees: Every member should pay monthly fee to ChoAn
+
+5.Service: health services provided by ChocAn
+
+6. Service Code: provider check the services provided through service codes
+
+7. Member Number: The ID of each member of ChocAn
+
+8. Provider Number: Identification of each provider
+
+9. Report
+    1) Report sent to ChocAn Manager automatically and manually 
+    2) Each member who has consulted a ChocAn provider during that week receives a list of services provided to that member
+    3) Each provider will get a weekly report containing the list of services he or she provided to ChocAn members
+    4) A summary report send to Manager of provider. The report lists every
+    provider to be paid that week, the number of consultations each had, and his or her total
+    fee for that week. Finally, the total number of providers who provided services, the total
+    number of consultations, and the overall fee total are printed.
+
+10. Manager
+    1) Manager of the provider
+    2) Manager of ChocAn
+
+11.Interactive Mode : add/remove/update member infomation
+
+12. Provider Directory: an alphabetically ordered list of service names and corresponding service codes and fees

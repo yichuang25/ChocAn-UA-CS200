@@ -1,0 +1,502 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+  <title>Team 13 Project Report</title>
+  <h1>
+    <center>CS 200 Project Report</center>
+  </h1>
+  <hr>
+  <h2>
+    <center> Team Members </center>
+  </h2>
+  <table style="width:100%; background-color: gainsboro;" border="1.5px solid black">
+    <tr>
+      <b>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>CWID</th>
+        <th>Email</th>
+        <th>Time spent on work</th>
+        <th>Task</th>
+      </b>
+    </tr>
+    <tr>
+      <td>Cory</td>
+      <td>Milsap</td>
+      <td>11875059</td>
+      <td>crmilsap@crimson.ua.edu</td>
+      <td>25%</td>
+      <td>Usecase Diagram</td>
+    </tr>
+    <tr>
+      <td>Dylan</td>
+      <td>Young</td>
+      <td>11617735</td>
+      <td>dcyoung1@crimson.ua.edu</td>
+      <td>25%</td>
+      <td>Use case</td>
+    </tr>
+    <tr>
+      <td>Terrence</td>
+      <td>Du</td>
+      <td>11686759</td>
+      <td>mdu4@crimson.ua.edu</td>
+      <td>25%</td>
+      <td>Report</td>
+    </tr>
+    <tr>
+      <td>Yichen</td>
+      <td>Huang</td>
+      <td>11906882</td>
+      <td>yhuang87@crimson.ua.edu</td>
+      <td>25%</td>
+      <td>Use case, Glossary</td>
+    </tr>
+  </table>
+
+
+
+</head>
+
+<h2>
+  <center>BitBucket Statistics</center>
+</h2>
+<hr>
+<center>
+  <img width="100%" height="auto" src="Statistics1.png">
+  <img width="100%" height="auto" src="Statistics2.png">
+</center>
+
+<body>
+  <hr>
+  <h2>
+    <center> Project Contect </center>
+  </h2>
+  <center>
+    <p><a href="./report.html" target="_blank">report.html</a></li>
+      <p><a href="./Glossary.txt" target="_blank">Glossary.txt</a></li>
+        <p><a href="./Usecase.txt" target="_blank">Usecase.txt</a></li>
+  </center>
+  <hr>
+  <h2>
+    <center> Project Files </center>
+  </h2>
+
+  <table style="width:100%; background-color: gainsboro;" border="2px solid white">
+    <tr>
+      <th>
+        <h3 style="color:crimson">Glossary</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <!--p><iframe src="Glossary.txt" frameborder="0" height="400"
+            width="95%"></iframe></p-->
+        <ol>
+          <li><b style="color:brown">Member: </b>Member of ChocAn, every member has a member card</li>
+          <li><b style="color:brown">Provider: </b>Health Care Professional who provides services to ChocAn member</li>
+          <li><b style="color:brown">Terminal: </b>desined for provider, like a credit card device in a shop</li>
+          <li><b style="color:brown">Fees: </b>Every member should pay monthly fee to ChoAn</li>
+          <li><b style="color:brown">Service: </b>health services provided by ChocAn</li>
+          <li><b style="color:brown">Service Code: </b>provider check the services provided through service codes</li>
+          <li><b style="color:brown">Member Number: </b>The ID of each member of ChocAn</li>
+          <li><b style="color:brown">Provider Number: </b>Identification of each provider</li>
+          <li><b style="color:brown">Report:</b>
+            <ol>
+              <li>Report sent to ChocAn Manager automatically and manually</li>
+              <li>Each member who has consulted a ChocAn provider during that week receives a list of services provided
+                to
+                that member</li>
+              <li>Each provider will get a weekly report containing the list of services he or she provided to ChocAn
+                members
+              </li>
+              <li>
+                A summary report send to Manager of provider. The report lists every
+                provider to be paid that week, the number of consultations each had, and his or her total
+                fee for that week. Finally, the total number of providers who provided services, the total
+                number of consultations, and the overall fee total are printed.
+              </li>
+            </ol>
+
+          </li>
+          <li><b style="color:brown">Manager</b>
+            <ul>
+              <li>Manager of the provider</li>
+              <li>Manager of ChocAn</li>
+            </ul>
+          </li>
+          <li><b style="color:brown">Interactive Mode: </b>add/remove/update member infomation</li>
+          <li><b style="color:brown">Provider Directory: </b>an alphabetically ordered list of service names and
+            corresponding service codes and fees</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <h3 style="color:crimson">Usecases</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <!--p><iframe src="Usecase.txt" frameborder="0" height="400"
+            width="95%"></iframe></p-->
+        <h4 style="color:brown">Total Actors:</h4>
+        <ol>
+          <li>ChocAn manager</li>
+          <li>Provider</li>
+          <li>Operator of ChocAn</li>
+          <li>Timer/Scheduler</li>
+        </ol>
+        <hr>
+        <h4 style="color:brown">Total Use Cases:</h4>
+        <ol>
+          <li><a href="#Member_Validation">Validate Member</a></li><br>
+          <li><a href="#Bill_ChocAn">Bill ChocAn after service</a>
+            <br>Extents:
+            <dd>Validate member</dd>
+            Include:
+          </li>
+          <dd>
+            <li><a href="#Look_up_Service_Code">Look up and Validate service code</a></li>
+          </dd>
+          <dd>
+            <li><a href="#Check_service_fee">Check service fee</a></li>
+          </dd>
+          <dd>
+            <li><a href="#Record_the_bill">Record the bill</a></li>
+          </dd>
+          <dd>
+            <li><a href="#Varify_amount_paied">Verify amount to be paid by ChocAn</a></li>
+          </dd><br />
+          <li><a href="#Request_provider_directory">Request provider directory</a></li><br />
+          <li><a href="#Generating_report">Genarating Reports</a>
+            <br />Extents:
+            <dd>
+          <li><a href="#Manage_Report">Manage report</a></li>
+          </dd>
+          Include:
+          </li>
+          <dd>
+            <li><a href="#Send_individual_report">Send individual report to member</a></li>
+          </dd>
+          <dd>
+            <li><a href="#Send_report_provider">Send individual report to provider</a></li>
+          </dd>
+          <dd>
+            <li><a href="#Send_summary_report">Send summary report to manager</a></li>
+          </dd><br />
+          <li><a href="#Write_EFT_data">Write EFT data to disk</a></li><br>
+          <li><a href="#Manage_database">Manage database</a>
+            <br />Extents:
+            <dd>
+          <li><a href="#Add/Delete_member">Add/Delete member</a></li>
+          </dd>
+          <dd>
+            <li><a href="#Update_members">Update members' record</a></li>
+          </dd>
+          <dd>
+            <li><a href="#Add/delete_provider">Add/delete provider</a></li>
+          </dd>
+          <dd>
+            <li><a href="#Update_providers">Update providers' record</a></li>
+          </dd>
+          </li>
+        </ol>
+
+        <hr>
+        <h4 style="color:brown">Use Case Diagram: </h4>
+        <center><img src="project1.jpg"></center>
+        <hr>
+        <h4 style="color:brown">Use Case Descriptions: </h4>
+        <p>
+          <p><a id="Member_Validation"><b>Use Case #1: Member Validation</b></a></p>
+
+          Context: Member gives provider their member number to start services <br>
+          Acotrs:Provider<br>
+          Main success scenario:<br>
+          <ol>
+            <li>Member gives member card to the provider</li>
+            <li>Provider swip the card</li>
+            <li>Verify member's number</li>
+          </ol>
+          Extensions: <br>
+          <dd>Use Case #2</dd>
+
+        </p><br>
+
+        <p>
+          <p><a id="Bill_ChocAn"><b>Use Case #2: Bill ChocAn after service</b></a></p>
+          Context: Provider bills the services provided to the member <br>
+          Actors: Provider <br>
+          Main success scenario:<br>
+          <ol>
+            <li>Validate Member</li>
+            <li>Provider keys in the date</li>
+            <li>Provider looks up the service code</li>
+            <li>Provider vaildates service code</li>
+            <li>Add comments</li>
+            <li>Write file to disk</li>
+            <li>Check service fee</li>
+            <li>Calculate weekly payment to provider</li>
+          </ol>
+          Includes:<br>
+          <dd> Use Case#4</dd>
+        </p><br>
+
+
+        <p>
+          <p><a id="Look_up_Service_Code"><b>Use Case #3: Look up and Validate Service Code</b></a></p>
+          Context: To check that the service code has been correctly looked up and keyed in<br>
+          Actors: Provider<br>
+          Main success scenario: <br>
+          <ol>
+            <li>Open provider directory</li>
+            <li>Find the six digit code correspondent to the service</li>
+            <li>Key in the service code</li>
+            <li>Display the service name corresponding to the code</li>
+            <li>Check by provider</li>
+          </ol>
+          Includes:<br>
+          <dd>Use Case#5</dd>
+        </p><br>
+
+        <p>
+          <p><a id="Check_service_fee"><b>Use Case #4: Check service fee</b></a></p>
+          Actors: Provider<br>
+          Main success scenario:<br>
+          <ol>
+            <li>validation</li>
+            1.1. Provider enters the current date and time, the date the service was provided,
+            member name and number, service code, and fee to be paid
+            <li>Display fee on provider's terminal</li>
+          </ol>
+          Includes:<br>
+
+          <dd>Use Case #6</dd>
+        </p><br>
+
+        <p>
+          <p><a id="Record_the_bill"><b>Use Case #5: Record the bill</b></a></p>
+          Context: Records the bill information to the disk<br>
+          Main success scenario:<br>
+          <ol>
+            <li>Validate the service code</li>
+            <li>Generate bill record</li>
+            <li>Write the record to disk</li>
+          </ol>
+          Includes:<br>
+          <dd>Use Case#6</dd>
+
+        </p><br>
+
+        <p>
+          <p><a id="Varify_amount_paied"><b>Use Case #6: Varify amount paied</b></a></p>
+          Context: totals the fees to verify the amount to be paid to that provider by ChocAn<br>
+          Actors: Provider<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>At the end of the week, calculate provider's total fee</li>
+            <li>Verify the amount to be paid to ChocAn</li>
+          </ol>
+          Extensions:<br>
+
+          <dd>2a.1. The amount is not correct</dd>
+
+        </p><br>
+
+        <p>
+            <p><a id="Request_provider_directory"><b>Use Case #7: Request provider directory</b></a></p>
+          Context: Provider can request provider directory<br>
+          Actors: Provider<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>Provider request software for a provider directory</li>
+            <li>Software sends provider directory through email</li>
+          </ol>
+        </p><br>
+
+        <p>
+            <p><a id="Generating_report"><b>Use Case #8: Generating report</b></a></p>
+          Actor: manager, timer<br>
+          Context: Generate report and send to provider, member, and manager<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>Generate report and send to provider</li>
+            <li>Send report to member</li>
+            <li>Send report to provider</li>
+            <li>Send report to manager</li>
+          </ol>
+            Extensions:<br>
+            <ol>
+              <li>Use Case#10</li>
+              <li>Use Case#11</li>
+              <li>Use Case#12</li>
+            </ol>
+          
+        </p><br>
+
+        <p>
+            <p><a id="Manage_Report"><b>Use Case #9: Manage Report</b></a></p>
+          Context: Account fees in the week<br>
+          Actors:Timer<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>By timer on midnight Friday or when instructed by manager,
+              read the week's file of service provided</li>
+            <li>Print number of report</li>
+          </ol>
+            Includes:<br>
+              <dd>Use Case#8</dd>
+          
+        </p><br>
+
+        <p>
+            <p><a id="Send_individual_report"><b>Use Case #10: Send individual report to member</b></a></p>
+          Actors: Manager<br>
+          Context: Each member who has consulted a ChocAn provider during that week receives a list of services
+          provided to that member<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>Member who consulted with provider</li>
+            <li>Send report to member's email</li>
+          </ol>
+            Extensions:<br>
+              <dd>N/A</dd>
+            
+        </p><br>
+
+        <p>
+            <p><a id="Send_report_provider"><b>Use Case #11: Send individual report to provider</b></a></p>
+          Actors: Manager<br>
+          Context: Provider who has billed ChocAn receives a weekly report<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>Verification</li>
+            <li>Send report to Provider's email</li>
+          </ol>
+          Extensions:<br>
+            <dd>N/A</dd>
+          
+        </p><br>
+
+        <p>
+            <p><a id="Send_summary_report"><b>Use Case #12: Send summary report to manager</b></a></p>
+          Actors: Timer<br>
+          Context: report lists every provider to be paid that week, every consultations and total fee<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>Send report to manager's email</li>
+          </ol>
+          Extensions:<br>
+            <dd>N/A</dd>
+          
+        </p><br>
+
+        <p>
+            <p><a id="Write_EFT_data"><b>Use Case #13: Write EFT data to disk</b></a></p>
+          Actors: Scheduler<br>
+          Context: electornic transfer date save to disk<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>Add each transfered bill record to disk</li>
+          </ol>
+          Extensions:<br>
+            <dd>N/A</dd>
+          
+        </p><br>
+
+        <p>
+            <p><a id="Manage_database"><b>Use Case #14: Manage database</b></a></p>
+          Actors: ChocAn Operator<br>
+          Context: allow operators to manage members/providers in system<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>Add member</li>
+            <li>Delete member</li>
+            <li>Update members' record</li>
+            <li>Add provider</li>
+            <li>Delete provider</li>
+            <li>Update providers' record</li>
+          </ol>
+            Extensions:<br>
+            <ol>
+              <li>UseCase#15</li>
+              <li>UseCase#16</li>
+              <li>UseCase#17</li>
+              <li>UseCase#18</li>
+            
+          </ol>
+        </p><br>
+
+        <p>
+            <p><a id="Add/Delete_member"><b>Use Case #15: Add/Delete member</b></a></p>
+          Actors: Oprator<br>
+          Context: Oprator can add or delete member<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>Add new member</li>
+            <li>Delete member if the member is resigned</li>
+          </ol>
+          Extensions:<br>
+            <dd>N/A</dd>
+          
+        </p><br>
+
+        <p>
+            <p><a id="Update_members"><b>Use Case #16: Update members' record</b></a></p>
+          Actors: Oprator<br>
+          Context: Oprator update members' information<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>pdate memeber's record</li>
+          </ol>
+          Extensions:<br>
+            <dd>N/A</dd>
+          
+        </p><br>
+
+        <p>
+            <p><a id="Add/delete_provider"><b>Use Case #17: Add/delete provider</b></a></p>
+          Actors: Oprator<br>
+          Context: Oprator can add or delete provider<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>Add new provider</li>
+            <li>Delete member if the provider is resigned</li>
+          </ol>
+          Extensions:<br>
+            <dd>N/A</dd>
+          
+        </p><br>
+
+
+        <p>
+            <p><a id="Update_providers"><b>Use Case #18: Update providers' record</b></a></p>
+          Actors: Oprator<br>
+          Context: Oprator update providers' information<br>
+          Main succes scenario:<br>
+          <ol>
+            <li>Update Provider's record</li>
+          </ol>
+          Extensions:<br>
+            <dd>N/A</dd>
+          
+        </p><br>
+
+
+
+
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+
+
+</body>
+<footer></footer>
+</html>

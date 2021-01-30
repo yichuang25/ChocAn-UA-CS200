@@ -1,0 +1,172 @@
+Total Actors:
+
+1.ChocAn manager
+2.Provider
+3.Operator of ChocAn
+4.Timer/Scheduler
+
+----------------------------
+----------------------------
+Total Use Cases:
+
+1.  Validate Member
+2.  Bill ChocAn after service
+3.  Request provider directory
+4.  Generating Reports
+5. Send individual report to member
+6. Send individual report to provider
+7. Send summary report to manager
+8. Write EFT data to disk
+9. Validate operator
+10. Add member/provider
+11 Delete member/provider
+12. Update member/provider
+13. Request a report
+
+---------------------------------
+---------------------------------
+
+Description of each use case
+
+Use Case #1: Validate Member
+Context: The member hands his card to the health card provider and the provider swipes it through the card reader on the terminal. The computer then displays if the card is Valid, Invalid or Suspended.
+Actors: Provider
+Main success scenario:
+    1. Member gives member card to the provider
+    2. Provider swipe the card
+    3. The terminal displays that the card is valid
+Extensions:
+    3a. The terminal displays that the card has an invalid number
+    3b. The terminal displays that the member is suspended
+
+
+Use Case #2: Bill ChocAn after service
+Context: The software looks up the fee to be paid for the service and displays it on the provider's terminal.
+Actors: Provider
+Main success scenario:
+    1. Validate Member 
+    2. Provider key in the date
+    3. Provider look up the service code
+    4. Validate the service code
+    5. Add comment
+    6. Write file to disk
+    7. Look up the fee to be paid and display it
+    8. Provider fills in the form.
+Extensions: 
+    1a. The system should return an error if the validation failed
+    4a. The service code is nonexistent.
+    4b. The provider enters an existing code that is incorrect.
+
+Use Case #3: Request provider directory
+Context: Provider can requests the Provider Directory and is sent as an email attachment.
+Actors: Provider
+Main success scenario:
+	Step1. The provider send a request for a
+Extensions:
+    N/A
+
+    
+
+Use Case #4: Generating Report
+Actor: manager, timer
+Context: Generate report and send to provider, member and manager
+Main Success scenario:
+    1. Generate weekly report
+	1.1 The system logs the time when the report is generated
+    2. Send report to member
+    3. Send report to provider
+    4. Send report to manager
+Extends:
+    1a. The system should return an error if failed to generate a report   
+
+
+
+Use Case #5: Send individual report to member
+Context: Each member who has consulted a ChocAn provider during that week receives a list of services provided to that member
+Actors: Manager
+Main success scenario:
+    1. Member who consulted with provider
+    2. Send report to member's email
+Extensions:
+    N/A
+
+Use Case #6: Send individual report to provider
+Context: Provider who has billed ChocAn that week receives a weekly report
+Actors: Manager, timer
+Main success scenario:
+    1. The timer 
+Extensions:
+	N/A
+
+
+Use Case #7: Send summary report to manager
+Context: Manager can request the system to generate a summary report and send the summary report to the manager.
+Actors:Timer, manager
+Main success scenario: 
+	Step1. Manager request generate summary report
+	Step2. The system generates summary report
+	Step3. Send the summary report to the manager
+Extensions:
+	1a. Manager fail to request the summary report
+	2a. The system go wrong when generate the report
+   
+
+
+Use Case #8: Write EFT data to disk
+Context: Electronic transfer data is written to a disk
+Actors: Scheduler
+Main success scenario:
+    1. For each service provided, the fee is added to the total fee
+    2. The total fee is written to a disk. 
+Extensions: 
+    N/A
+
+Use Case #9: Validate operator
+Context: In order to run the software in interactive mode, the operator at the ChocAn Data Center needs to be validated
+Actors: ChocAn Operator
+Main Success scenario:
+The operator runs interactive mode
+The terminal prompts the user to enter an admin password
+The software then goes into interactive mode
+Extensions:
+	3a. The password is entered incorrectly.
+
+
+
+Use Case #10: Add Member/Provider
+Context: Add the member/provider to the database.
+Actors: Operator
+Main Success scenario:
+The new member/provider’s information is entered in
+The member/provider is appended to the list
+Extensions:
+    2a. The member/provider already exists
+
+
+Use Case #11: Delete Member/Provider
+Context: Delete the member/provider to the database.
+Actors: Operator
+Main Success scenario:
+The member/provider’s is searched for in the database
+The member/provider is removed from the list
+Extensions:
+    2a. The member/provider does not exist
+
+
+Use Case #12: Update member/provider
+Context: Update the member/provider’s existing info in the database.
+Actors: Operator
+Main Success scenario:
+The member/provider’s is searched for in the database
+The member/provider information is able to be edited and changed
+Extensions:
+    2a. The member/provider does not exist
+
+Use Case #13: Request a reporte
+Context: The manager is able to individually request any one of three reports
+Actors: Manager
+Main Success scenario:
+The manager enters into the terminal that he/she would like to request a report.
+The terminal prompts and asks which report the manager would like to see.
+Extensions:
+	N/A
